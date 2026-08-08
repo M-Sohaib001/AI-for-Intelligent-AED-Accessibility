@@ -27,6 +27,11 @@
     "738283-001",
     "738782-101"
   ],
+  "final_study_area": {
+    "planning_area": "WOODLANDS",
+    "official_planning_area_code": "WD",
+    "total_aeds_inside_final_boundary": 523
+  },
   "selection_rationale": "Woodlands was selected because it contains 522 of 529 AED records from postal sector 73, corresponding to 98.68% containment. The boundary is taken directly from the authoritative URA Master Plan 2025 planning-area dataset rather than constructed using a convex hull or bounding box.",
   "methodological_note": "The frozen raw AED dataset remains unchanged. AEDs outside the selected study boundary are retained for provenance but are excluded from downstream study-area routing and evaluation."
 }

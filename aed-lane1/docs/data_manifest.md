@@ -19,3 +19,9 @@ Checksum: e2ef793ffd0fd2dbe99ffdcfb21b38154c81fd0685d1f0fcc5b75a6d57205c02
 
 The frozen AED source dataset is not modified. The study-area boundary is an
 independent spatial filter applied to the frozen dataset.
+
+## Final Study Area
+
+- **Planning area:** Woodlands
+- **Official planning-area code:** WD
+- **Total AEDs inside final boundary:** 523

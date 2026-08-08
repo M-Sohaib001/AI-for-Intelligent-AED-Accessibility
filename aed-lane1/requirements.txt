@@ -11,3 +11,4 @@ shapely
 folium
 matplotlib
 anthropic
+scikit-learn
