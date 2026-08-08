@@ -1,6 +1,7 @@
 from enum import Enum
 from datetime import datetime
 import networkx as nx
+import osmnx as ox
 
 class Feasibility(str, Enum):
     ELIGIBLE = "ELIGIBLE"
