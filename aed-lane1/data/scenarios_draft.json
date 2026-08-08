@@ -1,0 +1,294 @@
+{
+  "metadata": {
+    "generator": "Person B — 30-Scenario Draft Generator",
+    "study_area": "Woodlands",
+    "planning_area_code": "WD",
+    "source_aed_dataset": "data\\scdf_aed_frozen.geojson",
+    "source_boundary": "data\\district_boundary.geojson",
+    "total_frozen_aed_records": 9644,
+    "study_area_aed_records": 523,
+    "target_scenario_count": 30,
+    "random_seed": 42,
+    "status": "draft",
+    "feasibility_labeled": false,
+    "true_feasible_ids_assigned": false
+  },
+  "strata": {
+    "requested": [
+      "normal_daytime",
+      "after_hours",
+      "boundary_time",
+      "closed_aed",
+      "unknown_hours",
+      "relational_location",
+      "missing_floor",
+      "multiple_candidate_aeds",
+      "no_feasible_aed",
+      "outside_district",
+      "baseline_system_disagreement"
+    ],
+    "target_counts": {
+      "normal_daytime": 4,
+      "after_hours": 3,
+      "boundary_time": 3,
+      "closed_aed": 3,
+      "unknown_hours": 0,
+      "relational_location": 3,
+      "missing_floor": 2,
+      "multiple_candidate_aeds": 3,
+      "no_feasible_aed": 3,
+      "outside_district": 3,
+      "baseline_system_disagreement": 3
+    }
+  },
+  "unavailable_strata": {
+    "unknown_hours": {
+      "reason": "No AED records inside the frozen Woodlands study boundary have blank OPERATING_HOURS.",
+      "available_records": 0,
+      "generated_scenarios": 0,
+      "action": "No synthetic records were invented. The two originally requested unknown-hours scenarios were redistributed to other valid strata."
+    }
+  },
+  "scenarios": [
+    {
+      "scenario_id": "s01",
+      "category": "normal_daytime",
+      "start_lat": 1.4292857,
+      "start_lon": 103.7911653,
+      "datetime": "2026-08-15T10:30:00",
+      "selection_basis": "AED record inside Woodlands; ordinary daytime query."
+    },
+    {
+      "scenario_id": "s02",
+      "category": "normal_daytime",
+      "start_lat": 1.4418797,
+      "start_lon": 103.7979129,
+      "datetime": "2026-08-15T14:30:00",
+      "selection_basis": "AED record inside Woodlands; ordinary daytime query."
+    },
+    {
+      "scenario_id": "s03",
+      "category": "normal_daytime",
+      "start_lat": 1.4327007,
+      "start_lon": 103.789101,
+      "datetime": "2026-08-16T11:00:00",
+      "selection_basis": "AED record inside Woodlands; ordinary daytime query."
+    },
+    {
+      "scenario_id": "s04",
+      "category": "normal_daytime",
+      "start_lat": 1.4421007,
+      "start_lon": 103.8022998,
+      "datetime": "2026-08-16T15:30:00",
+      "selection_basis": "AED record inside Woodlands; ordinary daytime query."
+    },
+    {
+      "scenario_id": "s05",
+      "category": "after_hours",
+      "start_lat": 1.4436007,
+      "start_lon": 103.8030017,
+      "datetime": "2026-08-15T23:00:00",
+      "selection_basis": "AED record inside Woodlands; late-evening query."
+    },
+    {
+      "scenario_id": "s06",
+      "category": "after_hours",
+      "start_lat": 1.4425227,
+      "start_lon": 103.7896198,
+      "datetime": "2026-08-16T22:30:00",
+      "selection_basis": "AED record inside Woodlands; late-evening query."
+    },
+    {
+      "scenario_id": "s07",
+      "category": "after_hours",
+      "start_lat": 1.4418007,
+      "start_lon": 103.7874988,
+      "datetime": "2026-08-17T23:30:00",
+      "selection_basis": "AED record inside Woodlands; late-evening query."
+    },
+    {
+      "scenario_id": "s08",
+      "category": "boundary_time",
+      "start_lat": 1.4358437,
+      "start_lon": 103.7761615,
+      "datetime": "2026-08-15T07:00:00",
+      "selection_basis": "AED record inside Woodlands; query at a schedule boundary time."
+    },
+    {
+      "scenario_id": "s09",
+      "category": "boundary_time",
+      "start_lat": 1.4356007,
+      "start_lon": 103.7926029,
+      "datetime": "2026-08-15T17:00:00",
+      "selection_basis": "AED record inside Woodlands; query at a schedule boundary time."
+    },
+    {
+      "scenario_id": "s10",
+      "category": "boundary_time",
+      "start_lat": 1.4310916,
+      "start_lon": 103.7740558,
+      "datetime": "2026-08-16T23:59:00",
+      "selection_basis": "AED record inside Woodlands; query at a schedule boundary time."
+    },
+    {
+      "scenario_id": "s11",
+      "category": "closed_aed",
+      "start_lat": 1.4410036,
+      "start_lon": 103.7800907,
+      "datetime": "2026-08-15T03:00:00",
+      "selection_basis": "AED record has an explicit recorded Closed schedule."
+    },
+    {
+      "scenario_id": "s12",
+      "category": "closed_aed",
+      "start_lat": 1.4435707,
+      "start_lon": 103.775864,
+      "datetime": "2026-08-16T04:30:00",
+      "selection_basis": "AED record has an explicit recorded Closed schedule."
+    },
+    {
+      "scenario_id": "s13",
+      "category": "closed_aed",
+      "start_lat": 1.4421007,
+      "start_lon": 103.773949,
+      "datetime": "2026-08-17T02:00:00",
+      "selection_basis": "AED record has an explicit recorded Closed schedule."
+    },
+    {
+      "scenario_id": "s14",
+      "category": "relational_location",
+      "start_lat": 1.4368387,
+      "start_lon": 103.7917484,
+      "datetime": "2026-08-15T13:00:00",
+      "selection_basis": "AED location description contains relational language (e.g. near, beside, opposite, behind)."
+    },
+    {
+      "scenario_id": "s15",
+      "category": "relational_location",
+      "start_lat": 1.4350807,
+      "start_lon": 103.787186,
+      "datetime": "2026-08-16T15:00:00",
+      "selection_basis": "AED location description contains relational language (e.g. near, beside, opposite, behind)."
+    },
+    {
+      "scenario_id": "s16",
+      "category": "relational_location",
+      "start_lat": 1.4325487,
+      "start_lon": 103.7741626,
+      "datetime": "2026-08-17T18:00:00",
+      "selection_basis": "AED location description contains relational language (e.g. near, beside, opposite, behind)."
+    },
+    {
+      "scenario_id": "s17",
+      "category": "missing_floor",
+      "start_lat": 1.4406876,
+      "start_lon": 103.8009799,
+      "datetime": "2026-08-15T14:00:00",
+      "selection_basis": "AED record has missing floor-level information."
+    },
+    {
+      "scenario_id": "s18",
+      "category": "missing_floor",
+      "start_lat": 1.4370996,
+      "start_lon": 103.786568,
+      "datetime": "2026-08-16T16:00:00",
+      "selection_basis": "AED record has missing floor-level information."
+    },
+    {
+      "scenario_id": "s19",
+      "category": "multiple_candidate_aeds",
+      "start_lat": 1.4275077,
+      "start_lon": 103.792229,
+      "datetime": "2026-08-15T12:00:00",
+      "selection_basis": "Selected from a building containing multiple AED records; candidate competition must be determined by the routing system."
+    },
+    {
+      "scenario_id": "s20",
+      "category": "multiple_candidate_aeds",
+      "start_lat": 1.4418007,
+      "start_lon": 103.7888034,
+      "datetime": "2026-08-15T18:00:00",
+      "selection_basis": "Selected from a building containing multiple AED records; candidate competition must be determined by the routing system."
+    },
+    {
+      "scenario_id": "s21",
+      "category": "multiple_candidate_aeds",
+      "start_lat": 1.4305007,
+      "start_lon": 103.7770008,
+      "datetime": "2026-08-16T14:00:00",
+      "selection_basis": "Selected from a building containing multiple AED records; candidate competition must be determined by the routing system."
+    },
+    {
+      "scenario_id": "s22",
+      "category": "no_feasible_aed",
+      "start_lat": 1.4304007,
+      "start_lon": 103.7796024,
+      "datetime": "2026-08-15T03:30:00",
+      "selection_basis": "Candidate stress-test location/time; final feasibility must be independently determined by Person C."
+    },
+    {
+      "scenario_id": "s23",
+      "category": "no_feasible_aed",
+      "start_lat": 1.4373646,
+      "start_lon": 103.7769016,
+      "datetime": "2026-08-16T04:00:00",
+      "selection_basis": "Candidate stress-test location/time; final feasibility must be independently determined by Person C."
+    },
+    {
+      "scenario_id": "s24",
+      "category": "no_feasible_aed",
+      "start_lat": 1.4291107,
+      "start_lon": 103.7909083,
+      "datetime": "2026-08-17T02:30:00",
+      "selection_basis": "Candidate stress-test location/time; final feasibility must be independently determined by Person C."
+    },
+    {
+      "scenario_id": "s25",
+      "category": "outside_district",
+      "start_lat": 1.4417761,
+      "start_lon": 103.7623956,
+      "datetime": "2026-08-15T14:30:00",
+      "selection_basis": "Point deliberately generated just outside the frozen Woodlands boundary."
+    },
+    {
+      "scenario_id": "s26",
+      "category": "outside_district",
+      "start_lat": 1.4417761,
+      "start_lon": 103.8137003,
+      "datetime": "2026-08-16T22:00:00",
+      "selection_basis": "Point deliberately generated just outside the frozen Woodlands boundary."
+    },
+    {
+      "scenario_id": "s27",
+      "category": "outside_district",
+      "start_lat": 1.4195076,
+      "start_lon": 103.788048,
+      "datetime": "2026-08-17T10:00:00",
+      "selection_basis": "Point deliberately generated just outside the frozen Woodlands boundary."
+    },
+    {
+      "scenario_id": "s28",
+      "category": "baseline_system_disagreement",
+      "start_lat": 1.4406846,
+      "start_lon": 103.7754901,
+      "datetime": "2026-08-15T09:00:00",
+      "selection_basis": "Candidate comparison case for later baseline-vs-system evaluation; disagreement is NOT asserted here."
+    },
+    {
+      "scenario_id": "s29",
+      "category": "baseline_system_disagreement",
+      "start_lat": 1.4437906,
+      "start_lon": 103.7829441,
+      "datetime": "2026-08-16T13:30:00",
+      "selection_basis": "Candidate comparison case for later baseline-vs-system evaluation; disagreement is NOT asserted here."
+    },
+    {
+      "scenario_id": "s30",
+      "category": "baseline_system_disagreement",
+      "start_lat": 1.4401037,
+      "start_lon": 103.7952274,
+      "datetime": "2026-08-17T19:00:00",
+      "selection_basis": "Candidate comparison case for later baseline-vs-system evaluation; disagreement is NOT asserted here."
+    }
+  ]
+}
