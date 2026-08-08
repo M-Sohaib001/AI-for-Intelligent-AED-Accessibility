@@ -1,0 +1,32 @@
+{
+  "study_area_status": "FROZEN",
+  "postal_sector": "73",
+  "selected_planning_area": {
+    "name": "WOODLANDS",
+    "code": "WD"
+  },
+  "official_dataset": {
+    "path": "data\\official_mp25_planning_areas.geojson",
+    "dataset_name": "Master Plan 2025 Planning Area Boundary (No Sea)",
+    "publisher": "Urban Redevelopment Authority",
+    "source": "data.gov.sg"
+  },
+  "aed_coverage": {
+    "total_sector_aeds": 529,
+    "aeds_inside_boundary": 522,
+    "aeds_outside_boundary": 7,
+    "containment_rate": 0.9867674858223062,
+    "containment_rate_pct": 98.68
+  },
+  "excluded_aed_ids": [
+    "739453-001",
+    "738782-001",
+    "738100-001",
+    "738205-001",
+    "738702-001",
+    "738283-001",
+    "738782-101"
+  ],
+  "selection_rationale": "Woodlands was selected because it contains 522 of 529 AED records from postal sector 73, corresponding to 98.68% containment. The boundary is taken directly from the authoritative URA Master Plan 2025 planning-area dataset rather than constructed using a convex hull or bounding box.",
+  "methodological_note": "The frozen raw AED dataset remains unchanged. AEDs outside the selected study boundary are retained for provenance but are excluded from downstream study-area routing and evaluation."
+}

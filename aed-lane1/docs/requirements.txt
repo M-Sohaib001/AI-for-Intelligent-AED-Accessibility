@@ -1,0 +1,13 @@
+osmnx
+networkx
+fastapi
+uvicorn
+geopy
+pydantic
+pandas
+pytest
+geopandas
+shapely
+folium
+matplotlib
+anthropic

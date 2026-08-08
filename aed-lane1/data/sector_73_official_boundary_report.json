@@ -1,0 +1,42 @@
+{
+  "sector": "73",
+  "total_sector_aeds": 529,
+  "official_dataset": {
+    "dataset_id": "d_2cc750190544007400b2cfd5d7f53209",
+    "name": "Master Plan 2025 Planning Area Boundary (No Sea)",
+    "publisher": "Urban Redevelopment Authority",
+    "source": "data.gov.sg",
+    "sha256": "e6ecc1743de5c39ec154a30b3b8037896fbc6c5f863e10c7dbfd77de12706c9c"
+  },
+  "candidate_planning_areas": [
+    {
+      "planning_area": "WOODLANDS",
+      "planning_area_code": "WD",
+      "aed_count": 522,
+      "coverage_pct": 0.9867674858223062
+    },
+    {
+      "planning_area": "SEMBAWANG",
+      "planning_area_code": "SB",
+      "aed_count": 3,
+      "coverage_pct": 0.005671077504725898
+    },
+    {
+      "planning_area": "SUNGEI KADUT",
+      "planning_area_code": "SK",
+      "aed_count": 3,
+      "coverage_pct": 0.005671077504725898
+    },
+    {
+      "planning_area": "LIM CHU KANG",
+      "planning_area_code": "LK",
+      "aed_count": 1,
+      "coverage_pct": 0.001890359168241966
+    }
+  ],
+  "method_notes": [
+    "AEDs were spatially tested against official planning area polygons.",
+    "Polygon.covers() was used so points on polygon boundaries count as covered.",
+    "The candidate ranking does not automatically determine the final study boundary."
+  ]
+}
