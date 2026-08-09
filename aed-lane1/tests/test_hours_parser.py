@@ -122,3 +122,56 @@ def test_mixed_parsed_and_unparsed():
     assert parsed["status"] == "complex"
     assert len(parsed["windows"]) == 1
     assert len(parsed["unparsed_segments"]) == 1
+
+def test_weekday_weekend_split():
+    parsed = parse_hours(
+        "Mon - Fri 08:30-18:00; "
+        "Sat 10:00-14:00; "
+        "Sun Closed;"
+    )
+
+    assert parsed["status"] == "scheduled"
+    assert len(parsed["windows"]) == 2
+
+    # Monday
+    assert is_open_at(
+        parsed,
+        datetime(2026, 8, 10, 12, 0),
+    ) is True
+
+    # Saturday
+    assert is_open_at(
+        parsed,
+        datetime(2026, 8, 15, 12, 0),
+    ) is True
+
+    # Sunday
+    assert is_open_at(
+        parsed,
+        datetime(2026, 8, 16, 12, 0),
+    ) is False
+
+
+def test_single_day_schedule():
+    parsed = parse_hours("Wed 09:00-17:00;")
+
+    assert parsed["status"] == "scheduled"
+    assert len(parsed["windows"]) == 1
+
+    # Wednesday
+    assert is_open_at(
+        parsed,
+        datetime(2026, 8, 12, 12, 0),
+    ) is True
+
+    # Wednesday outside hours
+    assert is_open_at(
+        parsed,
+        datetime(2026, 8, 12, 18, 0),
+    ) is False
+
+    # Thursday
+    assert is_open_at(
+        parsed,
+        datetime(2026, 8, 13, 12, 0),
+    ) is False
