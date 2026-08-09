@@ -1,11 +1,19 @@
-__pycache__/
-*.py[cod]
-.venv/
+# Python
 venv/
-env/
-.env
-.env.*
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node
 node_modules/
 .next/
-*.log
+.env
+.env.local
+
+# OS
 .DS_Store
+
+# Never commit secrets
+*.key*
+*ANTHROPIC_API_KEY*
