@@ -57,3 +57,14 @@ def test_normal_location_without_flags():
     )
 
     assert result["flags"] == []
+
+def test_location_matching_is_case_insensitive():
+    result = flag_location(
+        "AED NEAR RECEPTION ON LEVEL 2",
+        "",
+    )
+
+    assert "missing_floor_info" in result["flags"]
+    assert "floor_reference" in result["flags"]
+    assert "relational_location" in result["flags"]
+    assert "possible_indoor_access" in result["flags"]

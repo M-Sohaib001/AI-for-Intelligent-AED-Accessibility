@@ -17,11 +17,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 The Canopy (Opposite Ticketing Counter)",
@@ -61,11 +64,14 @@
           ],
           "start": "05:30",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Near Passenger Service Centre (DTL)",
@@ -103,14 +109,17 @@
             "SUN"
           ],
           "start": "06:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "03:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 3:00 AM, Tue: Closes at 3:00 AM, Wed: Closes at 3:00 AM, Thu: Closes at 3:00 AM, Fri: Closes at 3:00 AM, Sat: Closes at 3:00 AM, Sun: Closes at 3:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 3 Between Library And Escalator",
@@ -148,14 +157,17 @@
             "SUN"
           ],
           "start": "06:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "03:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 3:00 AM, Tue: Closes at 3:00 AM, Wed: Closes at 3:00 AM, Thu: Closes at 3:00 AM, Fri: Closes at 3:00 AM, Sat: Closes at 3:00 AM, Sun: Closes at 3:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 At Waterfront Canopy",
@@ -193,11 +205,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Inside Indoor Sports Hall, Beside Handicap Toilet (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -237,11 +252,14 @@
           ],
           "start": "05:30",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Near Passenger Service Centre (NEL)",
@@ -280,11 +298,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Guardhouse (Approach Security Officer)",
@@ -317,7 +338,20 @@
           ],
           "start": "08:30",
           "end": "20:30",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": [
+            {
+              "day": "MON",
+              "start": "12:30",
+              "end": "14:30"
+            },
+            {
+              "day": "MON",
+              "start": "16:30",
+              "end": "18:30"
+            }
+          ]
         },
         {
           "days": [
@@ -325,7 +359,15 @@
           ],
           "start": "08:30",
           "end": "16:30",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": [
+            {
+              "day": "TUE",
+              "start": "12:30",
+              "end": "14:30"
+            }
+          ]
         },
         {
           "days": [
@@ -333,7 +375,20 @@
           ],
           "start": "08:30",
           "end": "20:30",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": [
+            {
+              "day": "WED",
+              "start": "12:30",
+              "end": "14:30"
+            },
+            {
+              "day": "WED",
+              "start": "16:30",
+              "end": "18:30"
+            }
+          ]
         },
         {
           "days": [
@@ -341,7 +396,9 @@
           ],
           "start": "08:30",
           "end": "00:30",
-          "overnight": true
+          "overnight": true,
+          "closing_override": false,
+          "closed_intervals": []
         },
         {
           "days": [
@@ -349,7 +406,20 @@
           ],
           "start": "08:30",
           "end": "20:30",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": [
+            {
+              "day": "FRI",
+              "start": "12:30",
+              "end": "14:30"
+            },
+            {
+              "day": "FRI",
+              "start": "16:30",
+              "end": "18:30"
+            }
+          ]
         },
         {
           "days": [
@@ -357,13 +427,16 @@
           ],
           "start": "09:00",
           "end": "00:30",
-          "overnight": true
+          "overnight": true,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closed from 12:30 PM to 2:30 PM; 4:30 PM to 6:30 PM, Tue: Closed from 12:30 PM to 2:30 PM, Wed: Closed from 12:30 PM to 2:30 PM; 4:30 PM to 6:30 PM, Fri: Closed from 12:30 PM to 2:30 PM; 4:30 PM to 6:30 PM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Thomas Clinic & Surgery, Inside Treatment Room",
@@ -401,11 +474,14 @@
           ],
           "start": "09:00",
           "end": "22:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Telok Blangah CC, Near Entrance",
@@ -444,11 +520,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 4 Blk E1, Lift Lobby",
@@ -486,11 +565,14 @@
           ],
           "start": "08:30",
           "end": "18:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Management Office",
@@ -529,11 +611,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Canteen (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -572,11 +657,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Near Lift Lobby C",
@@ -617,11 +705,14 @@
           ],
           "start": "07:00",
           "end": "22:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 3 Blk T11A, School Of CLS, Along Corridor Near Staircase",
@@ -660,11 +751,14 @@
           ],
           "start": "08:30",
           "end": "18:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby",
@@ -704,11 +798,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby B",
@@ -748,11 +845,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby B",
@@ -792,11 +892,14 @@
           ],
           "start": "09:00",
           "end": "22:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Inside Constituency Office",
@@ -825,6 +928,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Report room area",
@@ -858,11 +962,14 @@
           ],
           "start": "08:30",
           "end": "18:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 15 Tsao Foundation Outside Clinic Room 3",
@@ -898,11 +1005,14 @@
           ],
           "start": "08:30",
           "end": "18:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 6 Clinic A & B",
@@ -940,11 +1050,14 @@
           ],
           "start": "05:30",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Near Passenger Service Centre (EWL)",
@@ -983,11 +1096,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Near Canteen (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -1017,6 +1133,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "At the public reception area",
@@ -1054,11 +1171,14 @@
           ],
           "start": "10:00",
           "end": "19:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Outside Salon Room",
@@ -1096,11 +1216,14 @@
           ],
           "start": "10:00",
           "end": "22:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 City Hall Wing Information Counter (Near Coleman Entrance)",
@@ -1139,14 +1262,17 @@
             "SUN"
           ],
           "start": "08:30",
-          "end": "23:59",
-          "overnight": false
+          "end": "02:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 2:00 AM, Tue: Closes at 2:00 AM, Wed: Closes at 2:00 AM, Thu: Closes at 2:00 AM, Fri: Closes at 2:00 AM, Sat: Closes at 2:00 AM, Sun: Closes at 2:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Behind Member Service Desk",
@@ -1184,14 +1310,17 @@
             "SUN"
           ],
           "start": "08:30",
-          "end": "23:59",
-          "overnight": false
+          "end": "02:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 2:00 AM, Tue: Closes at 2:00 AM, Wed: Closes at 2:00 AM, Thu: Closes at 2:00 AM, Fri: Closes at 2:00 AM, Sat: Closes at 2:00 AM, Sun: Closes at 2:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Deli Café Corridor",
@@ -1224,19 +1353,31 @@
             "TUE",
             "WED",
             "THU",
-            "FRI",
-            "SAT",
             "SUN"
           ],
           "start": "06:30",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": true,
+          "closed_intervals": []
+        },
+        {
+          "days": [
+            "FRI",
+            "SAT"
+          ],
+          "start": "06:30",
+          "end": "01:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Fri: Closes at 1:00 AM, Sat: Closes at 1:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Membership Services Counter",
@@ -1269,19 +1410,31 @@
             "TUE",
             "WED",
             "THU",
-            "FRI",
-            "SAT",
             "SUN"
           ],
           "start": "06:30",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": true,
+          "closed_intervals": []
+        },
+        {
+          "days": [
+            "FRI",
+            "SAT"
+          ],
+          "start": "06:30",
+          "end": "01:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Fri: Closes at 1:00 AM, Sat: Closes at 1:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level B1 Gym Counter",
@@ -1314,19 +1467,31 @@
             "TUE",
             "WED",
             "THU",
-            "FRI",
-            "SAT",
             "SUN"
           ],
           "start": "06:30",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": true,
+          "closed_intervals": []
+        },
+        {
+          "days": [
+            "FRI",
+            "SAT"
+          ],
+          "start": "06:30",
+          "end": "01:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Fri: Closes at 1:00 AM, Sat: Closes at 1:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 3 Beside Ladies",
@@ -1359,19 +1524,31 @@
             "TUE",
             "WED",
             "THU",
-            "FRI",
-            "SAT",
             "SUN"
           ],
           "start": "06:30",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": true,
+          "closed_intervals": []
+        },
+        {
+          "days": [
+            "FRI",
+            "SAT"
+          ],
+          "start": "06:30",
+          "end": "01:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Fri: Closes at 1:00 AM, Sat: Closes at 1:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 2 Beside Emergency Exit",
@@ -1400,6 +1577,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": true
     },
     "raw_location_description": "Level 1 Outside Archives Reading Room",
@@ -1437,11 +1615,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -1471,6 +1652,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": true
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -1500,6 +1682,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": true
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -1529,6 +1712,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": true
     },
     "raw_location_description": "Level 1 Lift Lobby F",
@@ -1558,6 +1742,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": true
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -1587,6 +1772,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": true
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -1626,11 +1812,14 @@
           ],
           "start": "05:30",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Near Passenger Service Centre (EWL)",
@@ -1669,11 +1858,14 @@
           ],
           "start": "05:30",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Near Passenger Service Centre (DTL)",
@@ -1712,11 +1904,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby C",
@@ -1746,6 +1941,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Report room area",
@@ -1780,7 +1976,9 @@
           ],
           "start": "09:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         },
         {
           "days": [
@@ -1788,11 +1986,14 @@
           ],
           "start": "07:00",
           "end": "22:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 2 Office",
@@ -1821,6 +2022,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "At the public reception area",
@@ -1852,19 +2054,40 @@
             "TUE",
             "WED",
             "THU",
-            "FRI",
-            "SAT",
             "SUN"
           ],
           "start": "08:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
+        },
+        {
+          "days": [
+            "FRI"
+          ],
+          "start": "08:00",
+          "end": "02:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
+        },
+        {
+          "days": [
+            "SAT"
+          ],
+          "start": "08:00",
+          "end": "03:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:00 AM, Tue: Closes at 1:00 AM, Wed: Closes at 1:00 AM, Thu: Closes at 1:00 AM, Fri: Closes at 2:00 AM, Sat: Closes at 3:00 AM, Sun: Closes at 1:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 3 Inside Corporate Services Office",
@@ -1897,19 +2120,40 @@
             "TUE",
             "WED",
             "THU",
-            "FRI",
-            "SAT",
             "SUN"
           ],
           "start": "08:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
+        },
+        {
+          "days": [
+            "FRI"
+          ],
+          "start": "08:00",
+          "end": "02:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
+        },
+        {
+          "days": [
+            "SAT"
+          ],
+          "start": "08:00",
+          "end": "03:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:00 AM, Tue: Closes at 1:00 AM, Wed: Closes at 1:00 AM, Thu: Closes at 1:00 AM, Fri: Closes at 2:00 AM, Sat: Closes at 3:00 AM, Sun: Closes at 1:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Outside Planet Bowl",
@@ -1941,19 +2185,40 @@
             "TUE",
             "WED",
             "THU",
-            "FRI",
-            "SAT",
             "SUN"
           ],
           "start": "08:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
+        },
+        {
+          "days": [
+            "FRI"
+          ],
+          "start": "08:00",
+          "end": "02:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
+        },
+        {
+          "days": [
+            "SAT"
+          ],
+          "start": "08:00",
+          "end": "03:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:00 AM, Tue: Closes at 1:00 AM, Wed: Closes at 1:00 AM, Thu: Closes at 1:00 AM, Fri: Closes at 2:00 AM, Sat: Closes at 3:00 AM, Sun: Closes at 1:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Near Reception Counter",
@@ -1987,19 +2252,40 @@
             "TUE",
             "WED",
             "THU",
-            "FRI",
-            "SAT",
             "SUN"
           ],
           "start": "08:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
+        },
+        {
+          "days": [
+            "FRI"
+          ],
+          "start": "08:00",
+          "end": "02:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
+        },
+        {
+          "days": [
+            "SAT"
+          ],
+          "start": "08:00",
+          "end": "03:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:00 AM, Tue: Closes at 1:00 AM, Wed: Closes at 1:00 AM, Thu: Closes at 1:00 AM, Fri: Closes at 2:00 AM, Sat: Closes at 3:00 AM, Sun: Closes at 1:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 2 Multipurpose Hall",
@@ -2037,11 +2323,14 @@
           ],
           "start": "05:30",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Near Passenger Service Centre (NSL)",
@@ -2080,11 +2369,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 14 Blk 5 (Management Office)",
@@ -2123,11 +2415,14 @@
           ],
           "start": "10:00",
           "end": "23:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Takashimaya Atrium (Information Counter)",
@@ -2166,11 +2461,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Front Office",
@@ -2209,13 +2507,52 @@
           ],
           "start": "11:30",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": [
+            {
+              "day": "MON",
+              "start": "15:00",
+              "end": "18:00"
+            },
+            {
+              "day": "TUE",
+              "start": "15:00",
+              "end": "18:00"
+            },
+            {
+              "day": "WED",
+              "start": "15:00",
+              "end": "18:00"
+            },
+            {
+              "day": "THU",
+              "start": "15:00",
+              "end": "18:00"
+            },
+            {
+              "day": "FRI",
+              "start": "15:00",
+              "end": "18:00"
+            },
+            {
+              "day": "SAT",
+              "start": "15:00",
+              "end": "18:00"
+            },
+            {
+              "day": "SUN",
+              "start": "15:00",
+              "end": "18:00"
+            }
+          ]
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closed from 3:00 PM to 6:00 PM, Tue: Closed from 3:00 PM to 6:00 PM, Wed: Closed from 3:00 PM to 6:00 PM, Thu: Closed from 3:00 PM to 6:00 PM, Fri: Closed from 3:00 PM to 6:00 PM, Sat: Closed from 3:00 PM to 6:00 PM, Sun: Closed from 3:00 PM to 6:00 PM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Jumbo Seafood @ Dempsey Hill (Indoor Dining Area)",
@@ -2253,11 +2590,14 @@
           ],
           "start": "05:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Information Counter (Botany Centre)",
@@ -2295,11 +2635,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "High School Blk D, Facing Gate 3 Guard Post (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -2338,11 +2681,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -2381,14 +2727,17 @@
             "SUN"
           ],
           "start": "05:30",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:00 AM, Tue: Closes at 1:00 AM, Wed: Closes at 1:00 AM, Thu: Closes at 1:00 AM, Fri: Closes at 1:00 AM, Sat: Closes at 1:00 AM, Sun: Closes at 1:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Inside Staff Office",
@@ -2426,11 +2775,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Blk D, Canteen (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -2469,11 +2821,14 @@
           ],
           "start": "05:30",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Near Passenger Service Centre (CCL)",
@@ -2512,12 +2867,52 @@
           ],
           "start": "11:30",
           "end": "23:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": [
+            {
+              "day": "MON",
+              "start": "15:00",
+              "end": "18:00"
+            },
+            {
+              "day": "WED",
+              "start": "15:00",
+              "end": "18:00"
+            },
+            {
+              "day": "THU",
+              "start": "15:00",
+              "end": "18:00"
+            },
+            {
+              "day": "FRI",
+              "start": "15:00",
+              "end": "18:00"
+            },
+            {
+              "day": "SAT",
+              "start": "15:00",
+              "end": "18:00"
+            },
+            {
+              "day": "SUN",
+              "start": "15:00",
+              "end": "18:00"
+            }
+          ]
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closed from 3:00 PM to 6:00 PM, Tue: Closed from 3:00 PM to 600 PM, Wed: Closed from 3:00 PM to 6:00 PM, Thu: Closed from 3:00 PM to 6:00 PM, Fri: Closed from 3:00 PM to 6:00 PM, Sat: Closed from 3:00 PM to 6:00 PM, Sun: Closed from 3:00 PM to 6:00 PM;"
+      ],
+      "access_conditions": [
+        {
+          "day": "TUE",
+          "type": "OTHER_NOTE",
+          "text": "Closed from 3:00 PM to 600 PM"
+        }
       ],
       "cannot_parse": false
     },
@@ -2557,11 +2952,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -2591,6 +2989,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "At the public reception area",
@@ -2626,7 +3025,9 @@
           ],
           "start": "08:30",
           "end": "18:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         },
         {
           "days": [
@@ -2634,11 +3035,14 @@
           ],
           "start": "08:30",
           "end": "13:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 3 Coffee Cove 2",
@@ -2666,6 +3070,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "At The Public Reception Area",
@@ -2703,11 +3108,14 @@
           ],
           "start": "05:30",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Near Passenger Service Centre (DTL)",
@@ -2744,11 +3152,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Indoor Sports Hall (Available During Dual Use Scheme Operating Hours)",
@@ -2776,6 +3187,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "At the public reception area",
@@ -2810,7 +3222,9 @@
           ],
           "start": "08:00",
           "end": "23:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": true,
+          "closed_intervals": []
         },
         {
           "days": [
@@ -2818,8 +3232,10 @@
             "SAT"
           ],
           "start": "08:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         },
         {
           "days": [
@@ -2827,13 +3243,16 @@
           ],
           "start": "08:00",
           "end": "23:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Fri: Closes at 1:00 AM, Sat: Closes at 1:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level B1 Multi-Purpose Hall",
@@ -2868,7 +3287,9 @@
           ],
           "start": "08:00",
           "end": "23:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": true,
+          "closed_intervals": []
         },
         {
           "days": [
@@ -2876,8 +3297,10 @@
             "SAT"
           ],
           "start": "08:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         },
         {
           "days": [
@@ -2885,13 +3308,16 @@
           ],
           "start": "08:00",
           "end": "23:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Fri: Closes at 1:00 AM, Sat: Closes at 1:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 3 Gym",
@@ -2929,11 +3355,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -2973,11 +3402,14 @@
           ],
           "start": "05:30",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Platform Level (DTL)",
@@ -3016,11 +3448,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 NTUC FairPrice Near Counter 4",
@@ -3060,11 +3495,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 NTUC Fairprice Near Main Entrance",
@@ -3103,11 +3541,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -3146,7 +3587,9 @@
           ],
           "start": "05:45",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         },
         {
           "days": [
@@ -3154,11 +3597,14 @@
           ],
           "start": "06:15",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Near Passenger Service Centre (EWL)",
@@ -3187,6 +3633,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Kaki Bukit Camp Guardroom",
@@ -3222,11 +3669,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 General Office (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -3265,11 +3715,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -3309,11 +3762,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby C",
@@ -3353,11 +3809,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -3397,11 +3856,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby",
@@ -3439,11 +3901,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Blk C, Near D&T Room (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -3473,6 +3938,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "NPP Counter area, ground floor",
@@ -3510,11 +3976,14 @@
           ],
           "start": "05:30",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Near Passenger Service Centre (EWL)",
@@ -3543,6 +4012,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Changi Naval Base Guardroom",
@@ -3578,12 +4048,51 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Depending on arrival and departure of ferries, Tue: Depending on arrival and departure of ferries, Wed: Depending on arrival and departure of ferries, Thu: Depending on arrival and departure of ferries, Fri: Depending on arrival and departure of ferries, Sat: Depending on arrival and departure of ferries, Sun: Depending on arrival and departure of ferries;"
+      ],
+      "access_conditions": [
+        {
+          "day": "MON",
+          "type": "CONDITIONAL_ACCESS",
+          "text": "Depending on arrival and departure of ferries"
+        },
+        {
+          "day": "TUE",
+          "type": "CONDITIONAL_ACCESS",
+          "text": "Depending on arrival and departure of ferries"
+        },
+        {
+          "day": "WED",
+          "type": "CONDITIONAL_ACCESS",
+          "text": "Depending on arrival and departure of ferries"
+        },
+        {
+          "day": "THU",
+          "type": "CONDITIONAL_ACCESS",
+          "text": "Depending on arrival and departure of ferries"
+        },
+        {
+          "day": "FRI",
+          "type": "CONDITIONAL_ACCESS",
+          "text": "Depending on arrival and departure of ferries"
+        },
+        {
+          "day": "SAT",
+          "type": "CONDITIONAL_ACCESS",
+          "text": "Depending on arrival and departure of ferries"
+        },
+        {
+          "day": "SUN",
+          "type": "CONDITIONAL_ACCESS",
+          "text": "Depending on arrival and departure of ferries"
+        }
       ],
       "cannot_parse": false
     },
@@ -3624,12 +4133,51 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Depending on arrival and departure of ferries, Tue: Depending on arrival and departure of ferries, Wed: Depending on arrival and departure of ferries, Thu: Depending on arrival and departure of ferries, Fri: Depending on arrival and departure of ferries, Sat: Depending on arrival and departure of ferries, Sun: Depending on arrival and departure of ferries;"
+      ],
+      "access_conditions": [
+        {
+          "day": "MON",
+          "type": "CONDITIONAL_ACCESS",
+          "text": "Depending on arrival and departure of ferries"
+        },
+        {
+          "day": "TUE",
+          "type": "CONDITIONAL_ACCESS",
+          "text": "Depending on arrival and departure of ferries"
+        },
+        {
+          "day": "WED",
+          "type": "CONDITIONAL_ACCESS",
+          "text": "Depending on arrival and departure of ferries"
+        },
+        {
+          "day": "THU",
+          "type": "CONDITIONAL_ACCESS",
+          "text": "Depending on arrival and departure of ferries"
+        },
+        {
+          "day": "FRI",
+          "type": "CONDITIONAL_ACCESS",
+          "text": "Depending on arrival and departure of ferries"
+        },
+        {
+          "day": "SAT",
+          "type": "CONDITIONAL_ACCESS",
+          "text": "Depending on arrival and departure of ferries"
+        },
+        {
+          "day": "SUN",
+          "type": "CONDITIONAL_ACCESS",
+          "text": "Depending on arrival and departure of ferries"
+        }
       ],
       "cannot_parse": false
     },
@@ -3668,11 +4216,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Ubin Living Labs",
@@ -3710,11 +4261,14 @@
           ],
           "start": "09:30",
           "end": "22:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Inside Admin Office",
@@ -3743,6 +4297,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Changi Airbase Guardroom",
@@ -3778,11 +4333,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby B",
@@ -3822,11 +4380,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -3866,11 +4427,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -3910,11 +4474,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby D",
@@ -3954,11 +4521,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Behind General Office (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -3998,11 +4568,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Outside General Office (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -4040,14 +4613,17 @@
             "SUN"
           ],
           "start": "07:30",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:00 AM, Tue: Closes at 1:00 AM, Wed: Closes at 1:00 AM, Thu: Closes at 1:00 AM, Fri: Closes at 1:00 AM, Sat: Closes at 1:00 AM, Sun: Closes at 1:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 2 Near Jackpot Room",
@@ -4085,14 +4661,17 @@
             "SUN"
           ],
           "start": "07:30",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:00 AM, Tue: Closes at 1:00 AM, Wed: Closes at 1:00 AM, Thu: Closes at 1:00 AM, Fri: Closes at 1:00 AM, Sat: Closes at 1:00 AM, Sun: Closes at 1:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Member Service Counter",
@@ -4131,11 +4710,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Near Function Room (Approach Security Officer)",
@@ -4164,6 +4746,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "NPP Counter area, ground area",
@@ -4201,11 +4784,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby B",
@@ -4245,11 +4831,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -4283,19 +4872,31 @@
             "TUE",
             "WED",
             "THU",
-            "FRI",
+            "FRI"
+          ],
+          "start": "08:00",
+          "end": "23:59",
+          "overnight": false,
+          "closing_override": true,
+          "closed_intervals": []
+        },
+        {
+          "days": [
             "SAT",
             "SUN"
           ],
           "start": "08:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "02:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Sat: Closes at 2:00 AM, Sun: Closes at 2:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 3 Opposite Food Court",
@@ -4333,14 +4934,17 @@
             "SUN"
           ],
           "start": "06:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:00 AM, Tue: Closes at 1:00 AM, Wed: Closes at 1:00 AM, Thu: Closes at 1:00 AM, Fri: Closes at 1:00 AM, Sat: Closes at 1:00 AM, Sun: Closes at 1:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Main Lobby",
@@ -4378,14 +4982,17 @@
             "SUN"
           ],
           "start": "06:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:00 AM, Tue: Closes at 1:00 AM, Wed: Closes at 1:00 AM, Thu: Closes at 1:00 AM, Fri: Closes at 1:00 AM, Sat: Closes at 1:00 AM, Sun: Closes at 1:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Soccer Field",
@@ -4422,14 +5029,17 @@
             "SUN"
           ],
           "start": "06:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:00 AM, Tue: Closes at 1:00 AM, Wed: Closes at 1:00 AM, Thu: Closes at 1:00 AM, Fri: Closes at 1:00 AM, Sat: Closes at 1:00 AM, Sun: Closes at 1:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Swimming Pool",
@@ -4466,14 +5076,17 @@
             "SUN"
           ],
           "start": "06:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:00 AM, Tue: Closes at 1:00 AM, Wed: Closes at 1:00 AM, Thu: Closes at 1:00 AM, Fri: Closes at 1:00 AM, Sat: Closes at 1:00 AM, Sun: Closes at 1:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Gym",
@@ -4511,11 +5124,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Outside Soccer Field, Canteen Blk (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -4554,11 +5170,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Behind General Office (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -4598,11 +5217,14 @@
           ],
           "start": "05:30",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Platform Level (DTL)",
@@ -4639,7 +5261,9 @@
           ],
           "start": "06:30",
           "end": "22:30",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         },
         {
           "days": [
@@ -4647,11 +5271,14 @@
           ],
           "start": "06:30",
           "end": "18:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Blk 30, Beside Bistro Facing Triangle",
@@ -4690,11 +5317,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level B2 Carpark Near Lift Lobby E",
@@ -4725,6 +5355,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Service Counter Level 1",
@@ -4763,11 +5394,14 @@
           ],
           "start": "14:00",
           "end": "22:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Near Counter",
@@ -4807,11 +5441,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -4851,11 +5488,14 @@
           ],
           "start": "05:30",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Near Passenger Service Centre (NEL)",
@@ -4894,11 +5534,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 2 School Hall (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -4937,11 +5580,14 @@
           ],
           "start": "09:00",
           "end": "22:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby 3",
@@ -4981,11 +5627,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Main Office",
@@ -5024,11 +5673,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -5068,11 +5720,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Blk B Outside General Office (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -5111,11 +5766,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Outside General Office (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -5154,11 +5812,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -5188,6 +5849,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Service Counter Level 1",
@@ -5226,11 +5888,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -5270,11 +5935,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby C",
@@ -5304,6 +5972,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Service Counter Level 1",
@@ -5340,7 +6009,60 @@
           ],
           "start": "08:30",
           "end": "21:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": [
+            {
+              "day": "MON",
+              "start": "12:30",
+              "end": "14:00"
+            },
+            {
+              "day": "MON",
+              "start": "16:30",
+              "end": "19:00"
+            },
+            {
+              "day": "TUE",
+              "start": "12:30",
+              "end": "14:00"
+            },
+            {
+              "day": "TUE",
+              "start": "16:30",
+              "end": "19:00"
+            },
+            {
+              "day": "WED",
+              "start": "12:30",
+              "end": "14:00"
+            },
+            {
+              "day": "WED",
+              "start": "16:30",
+              "end": "19:00"
+            },
+            {
+              "day": "THU",
+              "start": "12:30",
+              "end": "14:00"
+            },
+            {
+              "day": "THU",
+              "start": "16:30",
+              "end": "19:00"
+            },
+            {
+              "day": "FRI",
+              "start": "12:30",
+              "end": "14:00"
+            },
+            {
+              "day": "FRI",
+              "start": "16:30",
+              "end": "19:00"
+            }
+          ]
         },
         {
           "days": [
@@ -5348,13 +6070,16 @@
           ],
           "start": "08:30",
           "end": "12:30",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closed from 12:30 PM to 2:00 PM, 4:30 PM to 7:00 PM, Tue: Closed from 12:30 PM to 2:00 PM, 4:30 PM to 7:00 PM, Wed: Closed from 12:30 PM to 2:00 PM, 4:30 PM to 7:00 PM, Thu: Closed from 12:30 PM to 2:00 PM, 4:30 PM to 7:00 PM, Fri: Closed from 12:30 PM to 2:00 PM, 4:30 PM to 7:00 PM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Family Medicare Clinic & Surgery (Consultation Room)",
@@ -5392,11 +6117,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby C",
@@ -5436,11 +6164,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 2 Outside Multi-Purpose Hall (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -5477,11 +6208,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Indoor Sports Hall (Available During Dual Use Scheme Operating Hours)",
@@ -5519,11 +6253,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby C",
@@ -5563,11 +6300,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -5607,11 +6347,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Basketball Court (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -5650,11 +6393,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Outside General Office (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -5694,11 +6440,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Outside NCC Room (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -5737,11 +6486,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 2 Indoor Sports Hall (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -5780,11 +6532,14 @@
           ],
           "start": "05:30",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Near Passenger Service Centre (NSL)",
@@ -5823,11 +6578,14 @@
           ],
           "start": "05:30",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Near Passenger Service Centre (DTL)",
@@ -5860,19 +6618,31 @@
             "TUE",
             "WED",
             "THU",
-            "FRI",
-            "SAT",
             "SUN"
           ],
           "start": "08:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": true,
+          "closed_intervals": []
+        },
+        {
+          "days": [
+            "FRI",
+            "SAT"
+          ],
+          "start": "08:00",
+          "end": "02:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Fri: Closes at 2:00 AM, Sat: Closes at 2:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Beside Swimming Pool",
@@ -5905,19 +6675,31 @@
             "TUE",
             "WED",
             "THU",
-            "FRI",
-            "SAT",
             "SUN"
           ],
           "start": "08:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": true,
+          "closed_intervals": []
+        },
+        {
+          "days": [
+            "FRI",
+            "SAT"
+          ],
+          "start": "08:00",
+          "end": "02:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Fri: Closes at 2:00 AM, Sat: Closes at 2:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 2 Gym",
@@ -5949,19 +6731,31 @@
             "TUE",
             "WED",
             "THU",
-            "FRI",
-            "SAT",
             "SUN"
           ],
           "start": "08:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": true,
+          "closed_intervals": []
+        },
+        {
+          "days": [
+            "FRI",
+            "SAT"
+          ],
+          "start": "08:00",
+          "end": "02:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Fri: Closes at 2:00 AM, Sat: Closes at 2:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 2 Outside Outpost Restaurant",
@@ -5993,19 +6787,31 @@
             "TUE",
             "WED",
             "THU",
-            "FRI",
-            "SAT",
             "SUN"
           ],
           "start": "08:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": true,
+          "closed_intervals": []
+        },
+        {
+          "days": [
+            "FRI",
+            "SAT"
+          ],
+          "start": "08:00",
+          "end": "02:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Fri: Closes at 2:00 AM, Sat: Closes at 2:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 3 Lobby",
@@ -6038,19 +6844,31 @@
             "TUE",
             "WED",
             "THU",
-            "FRI",
-            "SAT",
             "SUN"
           ],
           "start": "08:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": true,
+          "closed_intervals": []
+        },
+        {
+          "days": [
+            "FRI",
+            "SAT"
+          ],
+          "start": "08:00",
+          "end": "02:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Fri: Closes at 2:00 AM, Sat: Closes at 2:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 4 Ball Room",
@@ -6082,19 +6900,31 @@
             "TUE",
             "WED",
             "THU",
-            "FRI",
-            "SAT",
             "SUN"
           ],
           "start": "08:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": true,
+          "closed_intervals": []
+        },
+        {
+          "days": [
+            "FRI",
+            "SAT"
+          ],
+          "start": "08:00",
+          "end": "02:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Fri: Closes at 2:00 AM, Sat: Closes at 2:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 2 Inside MPH",
@@ -6132,11 +6962,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 4 Outside School Hall (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -6174,11 +7007,14 @@
           ],
           "start": "06:00",
           "end": "22:30",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Blk 73 Outside Munch",
@@ -6206,6 +7042,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Blk C Level 1 C2 Lift Lobby",
@@ -6235,6 +7072,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Blk B Level 6 Lift Lobby",
@@ -6274,11 +7112,14 @@
           ],
           "start": "05:30",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Near Passenger Service Centre (DTL)",
@@ -6317,11 +7158,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -6361,11 +7205,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby C",
@@ -6405,11 +7252,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Indoor Basketball Court (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -6448,11 +7298,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Guard House",
@@ -6487,14 +7340,17 @@
             "FRI"
           ],
           "start": "08:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:30",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:30 AM, Tue: Closes at 1:30 AM, Wed: Closes at 1:30 AM, Thu: Closes at 1:30 AM, Fri: Closes at 1:30 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 4 Cummins Asia Pacific (Warehouse - Inbound,Outbound Filtration)",
@@ -6529,14 +7385,17 @@
             "FRI"
           ],
           "start": "08:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:30",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:30 AM, Tue: Closes at 1:30 AM, Wed: Closes at 1:30 AM, Thu: Closes at 1:30 AM, Fri: Closes at 1:30 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 4M Cummins Asia Pacific (Offices)",
@@ -6572,14 +7431,17 @@
             "FRI"
           ],
           "start": "08:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:30",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:30 AM, Tue: Closes at 1:30 AM, Wed: Closes at 1:30 AM, Thu: Closes at 1:30 AM, Fri: Closes at 1:30 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 5 Cummins Asia Pacific (Warehouse - Inbound)",
@@ -6607,6 +7469,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": true
     },
     "raw_location_description": "Level 1 Lift Lobby (South Lobby)",
@@ -6646,11 +7509,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Graduate Hall 2, Main Entrance",
@@ -6688,11 +7554,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Cells Building Lobby",
@@ -6721,6 +7590,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Pasir Laba Camp  Guardroom",
@@ -6756,11 +7626,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 2 Blk 62, Outside Laundry Room",
@@ -6788,6 +7661,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Jurong Camp I Guardroom",
@@ -6823,11 +7697,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Precise Development Pte Ltd (Construction Site Office)",
@@ -6866,11 +7743,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -6910,11 +7790,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -6954,11 +7837,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -6998,11 +7884,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 School Field Toilet (Available During Dual Use Scheme Operating Hours)",
@@ -7030,6 +7919,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Co-located with J DHQ, Ground Floor, Service Counter",
@@ -7064,7 +7954,9 @@
           ],
           "start": "11:00",
           "end": "19:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         },
         {
           "days": [
@@ -7074,11 +7966,14 @@
           ],
           "start": "11:00",
           "end": "21:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Beside Futsal Court",
@@ -7107,6 +8002,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Void Deck NPP, Ground Floor, Service Counter",
@@ -7144,11 +8040,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby B",
@@ -7188,11 +8087,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -7222,6 +8124,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Void Deck NPP, Ground Floor, Service Counter",
@@ -7249,6 +8152,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Void Deck NPP, Ground Floor, Service Counter",
@@ -7286,11 +8190,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -7329,14 +8236,17 @@
             "SUN"
           ],
           "start": "05:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:30",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:30 AM, Tue: Closes at 1:30 AM, Wed: Closes at 1:30 AM, Thu: Closes at 1:30 AM, Fri: Closes at 1:30 AM, Sat: Closes at 1:30 AM, Sun: Closes at 1:30 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Inside Passenger Service Office",
@@ -7373,14 +8283,17 @@
             "SUN"
           ],
           "start": "08:30",
-          "end": "23:59",
-          "overnight": false
+          "end": "03:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 3:00 AM, Tue: Closes at 3:00 AM, Wed: Closes at 3:00 AM, Thu: Closes at 3:00 AM, Fri: Closes at 3:00 AM, Sat: Closes at 3:00 AM, Sun: Closes at 3:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Adventure Centre (Outside Office)",
@@ -7418,14 +8331,17 @@
             "SUN"
           ],
           "start": "08:30",
-          "end": "23:59",
-          "overnight": false
+          "end": "03:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 3:00 AM, Tue: Closes at 3:00 AM, Wed: Closes at 3:00 AM, Thu: Closes at 3:00 AM, Fri: Closes at 3:00 AM, Sat: Closes at 3:00 AM, Sun: Closes at 3:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Main Lobby (Near Female Toilet)",
@@ -7464,14 +8380,17 @@
             "SUN"
           ],
           "start": "08:30",
-          "end": "23:59",
-          "overnight": false
+          "end": "03:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 3:00 AM, Tue: Closes at 3:00 AM, Wed: Closes at 3:00 AM, Thu: Closes at 3:00 AM, Fri: Closes at 3:00 AM, Sat: Closes at 3:00 AM, Sun: Closes at 3:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Swimming Pool",
@@ -7508,14 +8427,17 @@
             "SUN"
           ],
           "start": "08:30",
-          "end": "23:59",
-          "overnight": false
+          "end": "03:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 3:00 AM, Tue: Closes at 3:00 AM, Wed: Closes at 3:00 AM, Thu: Closes at 3:00 AM, Fri: Closes at 3:00 AM, Sat: Closes at 3:00 AM, Sun: Closes at 3:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 3 Inside Gym",
@@ -7552,14 +8474,17 @@
             "SUN"
           ],
           "start": "08:30",
-          "end": "23:59",
-          "overnight": false
+          "end": "03:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 3:00 AM, Tue: Closes at 3:00 AM, Wed: Closes at 3:00 AM, Thu: Closes at 3:00 AM, Fri: Closes at 3:00 AM, Sat: Closes at 3:00 AM, Sun: Closes at 3:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 2 Lift Lobby B",
@@ -7599,11 +8524,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 3 Inside ISH (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -7641,14 +8569,17 @@
             "SUN"
           ],
           "start": "08:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "02:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 2:00 AM, Tue: Closes at 2:00 AM, Wed: Closes at 2:00 AM, Thu: Closes at 2:00 AM, Fri: Closes at 2:00 AM, Sat: Closes at 2:00 AM, Sun: Closes at 2:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 3 Outside Reception Counter",
@@ -7686,14 +8617,17 @@
             "SUN"
           ],
           "start": "08:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "02:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 2:00 AM, Tue: Closes at 2:00 AM, Wed: Closes at 2:00 AM, Thu: Closes at 2:00 AM, Fri: Closes at 2:00 AM, Sat: Closes at 2:00 AM, Sun: Closes at 2:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 3 Bowling Centre Office",
@@ -7732,11 +8666,14 @@
           ],
           "start": "09:00",
           "end": "22:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Near Multi-Purpose Hall",
@@ -7775,11 +8712,14 @@
           ],
           "start": "07:00",
           "end": "20:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Absolute Kinetics Consultancy Pte Ltd (Near Foodcourt)",
@@ -7818,12 +8758,51 @@
           ],
           "start": "09:00",
           "end": "17:30",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Please Call 68947259 (Guard Room), After 5:30 PM, Tue: Please Call 68947259 (Guard Room), After 5:30 PM, Wed: Please Call 68947259 (Guard Room), After 5:30 PM, Thu: Please Call 68947259 (Guard Room), After 5:30 PM, Fri: Please Call 68947259 (Guard Room), After 5:30 PM, Sat: Please Call 68947259 (Guard Room), After 5:30 PM, Sun: Please Call 68947259 (Guard Room), After 5:30 PM;"
+      ],
+      "access_conditions": [
+        {
+          "day": "MON",
+          "type": "ACCESS_INSTRUCTION",
+          "text": "Please Call 68947259 (Guard Room), After 5:30 PM"
+        },
+        {
+          "day": "TUE",
+          "type": "ACCESS_INSTRUCTION",
+          "text": "Please Call 68947259 (Guard Room), After 5:30 PM"
+        },
+        {
+          "day": "WED",
+          "type": "ACCESS_INSTRUCTION",
+          "text": "Please Call 68947259 (Guard Room), After 5:30 PM"
+        },
+        {
+          "day": "THU",
+          "type": "ACCESS_INSTRUCTION",
+          "text": "Please Call 68947259 (Guard Room), After 5:30 PM"
+        },
+        {
+          "day": "FRI",
+          "type": "ACCESS_INSTRUCTION",
+          "text": "Please Call 68947259 (Guard Room), After 5:30 PM"
+        },
+        {
+          "day": "SAT",
+          "type": "ACCESS_INSTRUCTION",
+          "text": "Please Call 68947259 (Guard Room), After 5:30 PM"
+        },
+        {
+          "day": "SUN",
+          "type": "ACCESS_INSTRUCTION",
+          "text": "Please Call 68947259 (Guard Room), After 5:30 PM"
+        }
       ],
       "cannot_parse": false
     },
@@ -7852,6 +8831,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Gombak Base Guardroom",
@@ -7877,6 +8857,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Bukit Panjang Camp Guardroom",
@@ -7912,11 +8893,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby B",
@@ -7956,11 +8940,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby C",
@@ -7997,8 +8984,10 @@
             "FRI"
           ],
           "start": "05:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         },
         {
           "days": [
@@ -8006,14 +8995,17 @@
             "SUN"
           ],
           "start": "00:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "00:30",
+          "overnight": false,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:00 AM, Tue: Closes at 1:00 AM, Wed: Closes at 1:00 AM, Thu: Closes at 1:00 AM, Fri: Closes at 1:00 AM, Sat: Closes at 12:30 AM, Sun: Closes at 12:30 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Admin Office",
@@ -8052,11 +9044,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Basketball Court (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -8095,11 +9090,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -8129,6 +9127,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Stagmont Camp Guardroom",
@@ -8163,14 +9162,17 @@
             "SUN"
           ],
           "start": "05:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:30",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:30 AM, Tue: Closes at 1:30 AM, Wed: Closes at 1:30 AM, Thu: Closes at 1:30 AM, Fri: Closes at 1:30 AM, Sat: Closes at 1:30 AM, Sun: Closes at 1:30 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Near Canteen",
@@ -8208,14 +9210,17 @@
             "SUN"
           ],
           "start": "05:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:30",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:30 AM, Tue: Closes at 1:30 AM, Wed: Closes at 1:30 AM, Thu: Closes at 1:30 AM, Fri: Closes at 1:30 AM, Sat: Closes at 1:30 AM, Sun: Closes at 1:30 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 2 Near Male Toilet",
@@ -8253,14 +9258,17 @@
             "SUN"
           ],
           "start": "05:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:30",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:30 AM, Tue: Closes at 1:30 AM, Wed: Closes at 1:30 AM, Thu: Closes at 1:30 AM, Fri: Closes at 1:30 AM, Sat: Closes at 1:30 AM, Sun: Closes at 1:30 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Near Ticketing Service Counter",
@@ -8299,14 +9307,17 @@
             "SUN"
           ],
           "start": "05:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:30",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:30 AM, Tue: Closes at 1:30 AM, Wed: Closes at 1:30 AM, Thu: Closes at 1:30 AM, Fri: Closes at 1:30 AM, Sat: Closes at 1:30 AM, Sun: Closes at 1:30 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Alighting Booth",
@@ -8334,6 +9345,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Mandai Camp II Guardroom",
@@ -8359,6 +9371,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Mandai Hill Camp Guardroom",
@@ -8384,6 +9397,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Void Deck NPP, Ground Floor, Service Counter",
@@ -8421,11 +9435,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby B",
@@ -8465,11 +9482,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -8508,14 +9528,17 @@
             "SUN"
           ],
           "start": "05:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:30",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:30 AM, Tue: Closes at 1:30 AM, Wed: Closes at 1:30 AM, Thu: Closes at 1:30 AM, Fri: Closes at 1:30 AM, Sat: Closes at 1:30 AM, Sun: Closes at 1:30 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Inside Ticket Office 2",
@@ -8553,14 +9576,17 @@
             "SUN"
           ],
           "start": "05:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:30",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:30 AM, Tue: Closes at 1:30 AM, Wed: Closes at 1:30 AM, Thu: Closes at 1:30 AM, Fri: Closes at 1:30 AM, Sat: Closes at 1:30 AM, Sun: Closes at 1:30 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Outside Public Toilet",
@@ -8597,14 +9623,17 @@
             "SUN"
           ],
           "start": "05:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:30",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:30 AM, Tue: Closes at 1:30 AM, Wed: Closes at 1:30 AM, Thu: Closes at 1:30 AM, Fri: Closes at 1:30 AM, Sat: Closes at 1:30 AM, Sun: Closes at 1:30 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Alighting Bay",
@@ -8642,11 +9671,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 3 On the Wall At Whiskey 5 Area",
@@ -8674,6 +9706,7 @@
       "windows": [],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Gym",
@@ -8709,11 +9742,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 School Canteen, Outside Gym (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -8752,11 +9788,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby B",
@@ -8796,11 +9835,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 2 Lift Lobby C",
@@ -8840,11 +9882,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -8884,11 +9929,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -8927,14 +9975,17 @@
             "SUN"
           ],
           "start": "05:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:30",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:30 AM, Tue: Closes at 1:30 AM, Wed: Closes at 1:30 AM, Thu: Closes at 1:30 AM, Fri: Closes at 1:30 AM, Sat: Closes at 1:30 AM, Sun: Closes at 1:30 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Inside Passenger Service Office",
@@ -8972,14 +10023,17 @@
             "SUN"
           ],
           "start": "05:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:30",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:30 AM, Tue: Closes at 1:30 AM, Wed: Closes at 1:30 AM, Thu: Closes at 1:30 AM, Fri: Closes at 1:30 AM, Sat: Closes at 1:30 AM, Sun: Closes at 1:30 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Outside Passenger Service Office",
@@ -9017,14 +10071,17 @@
             "SUN"
           ],
           "start": "05:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:30",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:30 AM, Tue: Closes at 1:30 AM, Wed: Closes at 1:30 AM, Thu: Closes at 1:30 AM, Fri: Closes at 1:30 AM, Sat: Closes at 1:30 AM, Sun: Closes at 1:30 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Next To Add Value Machine",
@@ -9061,11 +10118,14 @@
           ],
           "start": "08:30",
           "end": "18:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby",
@@ -9105,11 +10165,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -9149,11 +10212,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -9193,11 +10259,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -9237,11 +10306,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -9281,11 +10353,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -9325,11 +10400,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby B",
@@ -9369,11 +10447,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -9413,11 +10494,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby",
@@ -9456,14 +10540,17 @@
             "SUN"
           ],
           "start": "05:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:30",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:30 AM, Tue: Closes at 1:30 AM, Wed: Closes at 1:30 AM, Thu: Closes at 1:30 AM, Fri: Closes at 1:30 AM, Sat: Closes at 1:30 AM, Sun: Closes at 1:30 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Inside Passenger Service Office",
@@ -9501,14 +10588,17 @@
             "SUN"
           ],
           "start": "05:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:30",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:30 AM, Tue: Closes at 1:30 AM, Wed: Closes at 1:30 AM, Thu: Closes at 1:30 AM, Fri: Closes at 1:30 AM, Sat: Closes at 1:30 AM, Sun: Closes at 1:30 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Outside Public Toilet",
@@ -9545,14 +10635,17 @@
             "SUN"
           ],
           "start": "05:00",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:30",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:30 AM, Tue: Closes at 1:30 AM, Wed: Closes at 1:30 AM, Thu: Closes at 1:30 AM, Fri: Closes at 1:30 AM, Sat: Closes at 1:30 AM, Sun: Closes at 1:30 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Alighting Bay",
@@ -9584,7 +10677,9 @@
           ],
           "start": "09:30",
           "end": "18:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         },
         {
           "days": [
@@ -9593,11 +10688,14 @@
           ],
           "start": "09:30",
           "end": "18:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Outside Office",
@@ -9636,11 +10734,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Lift Lobby A",
@@ -9680,11 +10781,14 @@
           ],
           "start": "07:00",
           "end": "17:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Outside Admin Office (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
@@ -9723,11 +10827,14 @@
           ],
           "start": "08:00",
           "end": "23:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level B1 Near Customer Service Counter",
@@ -9765,11 +10872,14 @@
           ],
           "start": "08:30",
           "end": "18:00",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Life Guard Tower Near Wave House",
@@ -9807,14 +10917,17 @@
             "SUN"
           ],
           "start": "05:30",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:00 AM, Tue: Closes at 1:00 AM, Wed: Closes at 1:00 AM, Thu: Closes at 1:00 AM, Fri: Closes at 1:00 AM, Sat: Closes at 1:00 AM, Sun: Closes at 1:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Inside Staff Lounge",
@@ -9849,14 +10962,17 @@
             "SUN"
           ],
           "start": "05:30",
-          "end": "23:59",
-          "overnight": false
+          "end": "01:00",
+          "overnight": true,
+          "closing_override": true,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [
         "Mon: Closes at 1:00 AM, Tue: Closes at 1:00 AM, Wed: Closes at 1:00 AM, Thu: Closes at 1:00 AM, Fri: Closes at 1:00 AM, Sat: Closes at 1:00 AM, Sun: Closes at 1:00 AM;"
       ],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Inside Staff Lounge",
@@ -9892,11 +11008,14 @@
           ],
           "start": "00:00",
           "end": "23:59",
-          "overnight": false
+          "overnight": false,
+          "closing_override": false,
+          "closed_intervals": []
         }
       ],
       "unparsed_segments": [],
       "remarks": [],
+      "access_conditions": [],
       "cannot_parse": false
     },
     "raw_location_description": "Level 1 Shelter Near Fitness Corner",
