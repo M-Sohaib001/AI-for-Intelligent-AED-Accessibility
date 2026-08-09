@@ -85,8 +85,8 @@ def health_check():
     }
 
 
-@app.post("/rank_aeds", response_model=RankResponse)
-def rank_aeds(req: RankRequest):
+@app.post("/rank_aeds")
+def rank_aeds(req: RankRequest, explain: bool = False):
     if not AEDS_SNAPPED:
         raise HTTPException(status_code=500, detail="AED dataset not loaded.")
 
@@ -100,8 +100,8 @@ def rank_aeds(req: RankRequest):
 
     abstention = determine_abstention(ranked_res, feasibility_log)
 
-    return RankResponse(
-        ranked=[
+    response_data = {
+        "ranked": [
             RankedResult(
                 aed_id=r["aed_id"],
                 distance_m=r["distance_m"],
@@ -111,12 +111,21 @@ def rank_aeds(req: RankRequest):
                 geometry=r.get("geometry", [])
             ) for r in ranked_res
         ],
-        baseline=[
+        "baseline": [
             BaselineResult(
                 aed_id=b["aed_id"],
                 straight_line_m=b["straight_line_m"]
             ) for b in baseline_res
         ],
-        abstained=abstention["abstained"],
-        abstain_reason=abstention["reason"].value if abstention["reason"] else None
-    )
+        "abstained": abstention["abstained"],
+        "abstain_reason": abstention["reason"].value if abstention["reason"] else None,
+        "safety_banner": (
+            "Prototype for planning and simulation only — not for emergency use. "
+            "In an emergency in Singapore, call 995 immediately and follow SCDF instructions."
+        )
+    }
+
+    if explain:
+        response_data["feasibility_trace"] = feasibility_log
+
+    return response_data
