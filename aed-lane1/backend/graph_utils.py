@@ -26,6 +26,16 @@ def load_or_create_graph(graph_path=DEFAULT_GRAPH_PATH, place_query="Toa Payoh, 
     print(f"Graph saved to {graph_path}")
     return G
 
+def load_aed_dataset() -> list[dict]:
+    """Loads Person B's cleaned dataset from aeds_clean.json."""
+    if not os.path.exists(DEFAULT_CLEAN_DATA):
+        raise FileNotFoundError(
+            f"Required dataset not found: {DEFAULT_CLEAN_DATA}\n"
+            "Please run Person B's build_clean_dataset.py first."
+        )
+    
+    with open(DEFAULT_CLEAN_DATA, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 def validate_graph(G: nx.MultiDiGraph) -> dict:
     n_nodes, n_edges = G.number_of_nodes(), G.number_of_edges()
@@ -33,54 +43,6 @@ def validate_graph(G: nx.MultiDiGraph) -> dict:
     stats = {"n_nodes": n_nodes, "n_edges": n_edges, "is_connected": is_connected}
     print(f"Graph Validation: {stats}")  # Log it so you can copy into data_manifest.md
     return stats
-
-def load_aed_dataset() -> list[dict]:
-    """Loads Person B's cleaned dataset if available and non-empty; falls back to raw GeoJSON otherwise."""
-    if os.path.exists(DEFAULT_CLEAN_DATA) and os.path.getsize(DEFAULT_CLEAN_DATA) > 0:
-        try:
-            with open(DEFAULT_CLEAN_DATA, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except json.JSONDecodeError:
-            print("Warning: aeds_clean.json is invalid. Falling back to raw GeoJSON...")
-
-    print("Warning: aeds_clean.json not found or empty. Using raw GeoJSON fallback for testing...")
-    if not os.path.exists(DEFAULT_RAW_DATA):
-        print(f"Error: Raw dataset not found at {DEFAULT_RAW_DATA}")
-        return []
-
-    with open(DEFAULT_RAW_DATA, "r", encoding="utf-8") as f:
-        geojson = json.load(f)
-
-    aeds = []
-    for idx, feature in enumerate(geojson.get("features", [])):
-        props = feature.get("properties", {})
-        coords = feature.get("geometry", {}).get("coordinates", [0.0, 0.0])
-        lon, lat = coords[0], coords[1]
-        
-        aeds.append({
-            "aed_id": str(props.get("AED_ID", f"RAW-{idx}")),
-            "lat": lat,
-            "lon": lon,
-            "raw_operating_hours": props.get("OPERATING_HOURS", "Mon - Sun 00:00-23:59;"),
-            "raw_location_description": props.get("AED_LOCATION_DESCRIPTION", ""),
-            "raw_floor_level": props.get("AED_LOCATION_FLOOR_LEVEL", ""),
-            "parsed_hours": {
-                "status": "always_open" if "00:00-23:59" in str(props.get("OPERATING_HOURS", "")) else "unknown",
-                "windows": [],
-                "cannot_parse": False
-            },
-            "location_info": {
-                "floor": str(props.get("AED_LOCATION_FLOOR_LEVEL", "")),
-                "flags": []
-            },
-            "data_quality": {
-                "hours_parse_status": "parsed",
-                "location_flags": [],
-                "floor_present": bool(props.get("AED_LOCATION_FLOOR_LEVEL"))
-            }
-        })
-    return aeds
-
 
 def snap_aeds_to_graph(G: nx.MultiDiGraph, aeds: list[dict]) -> list[dict]:
     """Snaps lat/lon coordinates of AEDs to the nearest pedestrian graph nodes."""
@@ -113,11 +75,13 @@ def snap_aeds_to_graph(G: nx.MultiDiGraph, aeds: list[dict]) -> list[dict]:
     return snapped_aeds
 
 
-def node_euclidean_heuristic(u: int, v: int, G: nx.MultiDiGraph) -> float:
-    """Calculates Euclidean distance between two graph node IDs for A* heuristic search."""
+def node_geodesic_heuristic(u: int, v: int, G: nx.MultiDiGraph) -> float:
+    """Calculates great-circle distance in meters between two graph nodes for A* heuristic search."""
     node_u = G.nodes[u]
     node_v = G.nodes[v]
-    return ox.distance.euclidean(node_u["y"], node_u["x"], node_v["y"], node_v["x"])
+    return ox.distance.great_circle(node_u["y"], node_u["x"], node_v["y"], node_v["x"])
+
+
 
 
 def get_route_geometry(G: nx.MultiDiGraph, start_node: int, end_node: int) -> list[list[float]]:
@@ -129,7 +93,7 @@ def get_route_geometry(G: nx.MultiDiGraph, start_node: int, end_node: int) -> li
             start_node, 
             end_node, 
             weight="length", 
-            heuristic=lambda u, v: node_euclidean_heuristic(u, v, G)
+            heuristic=lambda u, v: node_geodesic_heuristic(u, v, G)
         )
         return [[G.nodes[n]["x"], G.nodes[n]["y"]] for n in path]
     except (nx.NetworkXNoPath, nx.NodeNotFound):
