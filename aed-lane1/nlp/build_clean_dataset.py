@@ -1,8 +1,8 @@
 import json
 from pathlib import Path
 
-from hours_parser import parse_hours
-from location_flagger import flag_location
+from nlp.hours_parser import parse_hours
+from nlp.location_flagger import flag_location
 
 # Config
 INPUT_PATH = Path("data/scdf_aed_frozen.geojson")
