@@ -36,5 +36,6 @@ def network_rank(start_lat: float, start_lon: float, G, aeds: list[dict],
                 "geometry": route_geo
             })
 
-    eligible.sort(key=lambda x: x["distance_m"])
+    # prioritize acceptable snaps over warnings
+    eligible.sort(key=lambda x: (x["distance_m"], 0 if x["graph_info"]["snap_quality"] == "acceptable" else 1))
     return eligible[:k], feasibility_log
