@@ -58,6 +58,7 @@ class RankedResult(BaseModel):
     flags: list[str] = []
     snap_quality: str
     geometry: list[list[float]] = []
+    reason: str = ""
 
 
 class BaselineResult(BaseModel):
@@ -108,7 +109,14 @@ def rank_aeds(req: RankRequest, explain: bool = False):
                 modeled_walk_time_min=r["modeled_walk_time_min"],
                 flags=r.get("data_quality", {}).get("location_flags", []),
                 snap_quality=r.get("graph_info", {}).get("snap_quality", "acceptable"),
-                geometry=r.get("geometry", [])
+                geometry=r.get("geometry", []),
+                # --- NEW REASON LOGIC (copy this exactly) ---
+                reason=(
+                    f"Open at requested time. Walking distance: {r['distance_m']}m. "
+                    f"{'Location mapping is slightly uncertain. ' if r.get('graph_info', {}).get('snap_quality') == 'warning' else ''}"
+                    f"{'Location mapping is unreliable. ' if r.get('graph_info', {}).get('snap_quality') == 'outlier' else ''}"
+                    f"{'Indoor access may be required. ' if 'possible_indoor_access' in r.get('data_quality', {}).get('location_flags', []) else ''}"
+                ).strip()
             ) for r in ranked_res
         ],
         "baseline": [
