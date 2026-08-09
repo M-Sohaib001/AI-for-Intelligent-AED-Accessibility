@@ -1,8 +1,7 @@
 import osmnx as ox
 from geopy.distance import geodesic
-from feasibility import evaluate_aed_feasibility, Feasibility
-from graph_utils import get_route_geometry
-
+from backend.feasibility import evaluate_aed_feasibility, Feasibility
+from backend.graph_utils import get_route_geometry
 
 def baseline_rank(start_lat: float, start_lon: float, aeds: list[dict], k: int = 5) -> list[dict]:
     """Computes direct straight-line (Haversine/Geodesic) distance comparator."""

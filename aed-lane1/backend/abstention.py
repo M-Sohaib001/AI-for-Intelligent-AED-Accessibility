@@ -1,5 +1,5 @@
 from enum import Enum
-from feasibility import Feasibility
+from backend.feasibility import Feasibility
 
 class AbstainReason(str, Enum):
     NO_OPEN_AED = "NO_OPEN_AED"
